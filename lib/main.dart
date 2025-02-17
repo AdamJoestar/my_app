@@ -8,7 +8,7 @@ void main() {
           'app gua ini',
           style: TextStyle(
             color: Colors.white,
-            fontFamily: 'IndieFlower'
+            fontFamily: 'BebasNeue'
           ),
         ),
         centerTitle: true,
@@ -22,7 +22,7 @@ void main() {
             fontWeight: FontWeight.bold,
             letterSpacing: 2.0,
             color: Colors.grey[600],
-            fontFamily: 'IndieFlower'
+            fontFamily: 'BebasNeue'
           ),
         ),
       ),
@@ -33,7 +33,7 @@ void main() {
           'click',
           style: TextStyle(
             color: Colors.white,
-            fontFamily: 'IndieFlower'
+            fontFamily: 'BebasNeue'
           ),
         ),
       ),
