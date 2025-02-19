@@ -2,13 +2,21 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Scaffold(
+      home: Home(),
+  ),
+  );
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         title: Text(
           'app gua ini',
           style: TextStyle(
-            color: Colors.white,
-            fontFamily: 'BebasNeue'
+              color: Colors.white,
+              fontFamily: 'BebasNeue'
           ),
         ),
         centerTitle: true,
@@ -18,26 +26,30 @@ void main() {
         child: Text(
           'hello bang',
           style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-            fontFamily: 'BebasNeue'
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 2.0,
+              color: Colors.grey[600],
+              fontFamily: 'BebasNeue'
           ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {  },
+        onPressed: () {},
         backgroundColor: Colors.red[600],
         child: Text(
           'click',
           style: TextStyle(
-            color: Colors.white,
-            fontFamily: 'BebasNeue'
+              color: Colors.white,
+              fontFamily: 'BebasNeue'
           ),
         ),
       ),
-    ),
-  ),
-  );
+    );
+  }
 }
+
+
+
+
+
