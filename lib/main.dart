@@ -23,7 +23,10 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Image.asset('assets/jingwoo.jpg'),
+        child: TextButton(
+          onPressed : () {},
+          child : Text('click me'),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
@@ -39,6 +42,7 @@ class Home extends StatelessWidget {
     );
   }
 }
+
 
 
 
