@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(
+    MaterialApp(
       home: Home(),
-  ),
+    ),
   );
 }
 
@@ -14,18 +15,20 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'app gua ini',
-          style: TextStyle(
-              color: Colors.white,
-              fontFamily: 'BebasNeue'
-          ),
+          style: TextStyle(color: Colors.white, fontFamily: 'BebasNeue'),
         ),
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: TextButton(
-          onPressed : () {},
-          child : Text('click me'),
+        child: IconButton(
+          onPressed: () {
+            print('You clicked me');
+          },
+          icon: Icon(Icons.mail),
+          style: IconButton.styleFrom(
+            backgroundColor: Colors.amber,
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
@@ -33,18 +36,9 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
         child: Text(
           'click',
-          style: TextStyle(
-              color: Colors.white,
-              fontFamily: 'BebasNeue'
-          ),
+          style: TextStyle(color: Colors.white, fontFamily: 'BebasNeue'),
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
