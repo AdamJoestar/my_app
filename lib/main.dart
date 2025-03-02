@@ -31,19 +31,22 @@ class Home extends StatelessWidget {
             ],
           ),
           Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan[600],
-            child: Text('Sigma boy'),
-          ),
-           Container(
             padding: EdgeInsets.all(30.0),
             color: Colors.red[600],
             child: Text('Sigma girl'),
           ),
            Container(
-            padding: EdgeInsets.all(40.0),
-            color: Colors.amber[600],
-            child: Text('Sigma man'),
+             padding: EdgeInsets.all(40.0),
+             color: Colors.amber[600],
+             child: Padding(
+               padding: const EdgeInsets.all(16.0),
+               child: Text('Sigma man'),
+             ),
+           ),
+           Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.cyan[600],
+            child: Text('Sigma boy'),
           ),
         ],
       ),
