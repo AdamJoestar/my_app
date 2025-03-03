@@ -20,34 +20,35 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      body: Row(
         children: [
-          Row(
-            children: [
-              Text('data'),
-              Text('data2'),
-            ],
+          Expanded(
+            child: Image.asset('assets/jingwoo.jpg'),
+            flex: 3,
           ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.red[600],
-            child: Text('Sigma girl'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
           ),
-           Container(
-             padding: EdgeInsets.all(40.0),
-             color: Colors.amber[600],
-             child: Padding(
-               padding: const EdgeInsets.all(16.0),
-               child: Text('Sigma man'),
-             ),
-           ),
-           Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan[600],
-            child: Text('Sigma boy'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pink,
+              child: Text('2'),
+            ),
           ),
+          Expanded(
+            flex: 1,
+            child: Container(padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('3'),
+              ),
+          )
         ],
       ),
       floatingActionButton: FloatingActionButton(
